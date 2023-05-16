@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jdl_rnd (0.1.0)
+    jdl_rnd (0.1.2)
 
 GEM
   remote: https://rubygems.org/

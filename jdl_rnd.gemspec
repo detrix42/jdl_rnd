@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["detrix42@gmail.com"]
 
   spec.summary       = "Created my own random number generator.  "
-  spec.description   = "I felt the need to\ndo so because I was unsure of how 'random' built in rand is."
+  spec.description   = "I felt the need to do so because\nI was unsure of how 'random' built in rand is."
   spec.homepage      = "http://novasector.net"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")

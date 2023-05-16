@@ -25,9 +25,9 @@ class RND
   def roll(r = -1)
     next_seed
     q = if r.positive?
-      @seed * r
-    else
-      @seed * @range
+          @seed * r
+        else
+          @seed * @range
         end
     q.to_i
   end
@@ -55,6 +55,16 @@ class RND
       cnt -= 1
     end
     @seed = s
+  end
+
+  def token(iter = 32)
+    pool = "abcdefghijklmnopqrstuvwxyz~0123456789-ABCDEFGHIGKLMNOPQRSTUVWXYZ"
+    token = ''
+    iter.times do
+      x = roll(pool.length)
+      token += pool[x]
+    end
+    token
   end
 end
 
